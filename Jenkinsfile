@@ -1,4 +1,11 @@
-#!usr/bin/evn
 node{
-	echo "Hello World"
+	stage('Build'){
+		echo 'Building....'
+	}
+	stage('Test'){
+		echo 'Testing....'
+	}
+	stage('Deploy'){
+		echo 'Deploying'
+	}
 }
