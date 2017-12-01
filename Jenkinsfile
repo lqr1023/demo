@@ -5,6 +5,7 @@ node{
 	}
 	stage('Build'){
 		echo 'Building....'
+		bat 'mvn clean'
 		bat 'mvn compile'
 	}
 	stage('Test'){
@@ -14,6 +15,7 @@ node{
 	stage('Deploy'){
 		if(currentBuild.result == null || currentBuild.result == 'SUCCESS'){
 			echo 'Deploying'
+			bat 'mvn package'
 		}
 	}
 }
