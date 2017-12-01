@@ -6,10 +6,10 @@ node{
 	stage('Build'){
 		echo 'Building....'
 		bat 'mvn compile'
-		bat 'mvn clean package'
 	}
 	stage('Test'){
 		echo 'Testing....'
+		bat 'mvn test'
 	}
 	stage('Deploy'){
 		echo 'Deploying'
