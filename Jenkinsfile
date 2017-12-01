@@ -6,6 +6,7 @@ node{
 	stage('Build'){
 		echo 'Building....'
 		bat 'mvn --version'
+		bat 'mvn --clean'
 	}
 	stage('Test'){
 		echo 'Testing....'
