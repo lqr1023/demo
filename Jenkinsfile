@@ -16,6 +16,7 @@ node{
 		if(currentBuild.result == null || currentBuild.result == 'SUCCESS'){
 			echo 'Deploying'
 			bat 'mvn package'
+			bat 'mvn tomcat7:deploy'
 		}
 	}
 }
