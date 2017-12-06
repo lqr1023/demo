@@ -1,9 +1,9 @@
 node{
-	stage('check'){
+	stage('checkaaa'){
 		echo 'checking out the source'
 		bat 'git clone https://github.com/lqr1023/demo.git'
 	}
-	stage('Build'){
+	stage('Bbb'){
 		echo 'Building....'
 		bat 'mvn clean'
 		bat 'mvn compile'
