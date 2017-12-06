@@ -1,7 +1,7 @@
 node{
 	stage('checkaaa'){
 		echo 'checking out the source'
-		bat 'git clone https://github.com/lqr1023/demo.git'
+		checkout scm
 	}
 	stage('Bbb'){
 		echo 'Building....'
